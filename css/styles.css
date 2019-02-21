@@ -1,0 +1,24 @@
+/* ELEMENT TAGS STYLING */
+
+
+body {
+  background-color: #a6e3e9;
+}
+
+
+
+
+/* CLASSES AND IDs STYLING */
+.nav-item {
+  text-align: right;
+  float: right;
+
+
+}
+.navbar-brand {
+  background-color: #474f85;
+  border-radius: 8%;
+  border-width: thin;
+  padding: 10px;
+  font-weight: bolder;
+}
