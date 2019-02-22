@@ -6,6 +6,8 @@
   <title>Quiz Board</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Abel|Crafty+Girls|VT323" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 
@@ -39,93 +41,144 @@
 
   <!-- About Project Section -->
   <div class="jumbotron" id="about">
-    <h2>About Quiz Board</h2>
-    <p>This quiz board project simulates a real paper work exam done in classes by students. The student/user is able to see multi-choice questions when the website loads. Each question has a number of points awarded when scored right. The user is
-      able to tick the correct answer through a radio button and submit answers when done taking the quiz. Once the answers are submitted, the student/user gets the results of what they scored and they are able to know their overall performance
-      using a predefined criteria.</p>
-    <a class="btn btn-primary btn-lg btn-info" href="https://github.com/jameskomo/quiz-board" target="_blank" role="button">Learn more</a>
+    <h1>About Quiz Board</h1>
+    <p>
+      <h2>This quiz board project simulates a real paper work exam done in classes by students. The student/user is able to see multi-choice questions when the website loads. Each question has a number of points awarded when scored right. The user
+        is
+        able to tick the correct answer through a radio button and submit answers when done taking the quiz. Once the answers are submitted, the student/user gets the results of what they scored and they are able to know their overall performance
+        using a predefined criteria.</h2>
+    </p>
+    <a class="btn btn-primary btn-lg btn-info" href="https://github.com/jameskomo/quiz-board" target="_blank" role="button">Learn more <i class="fas fa-info-circle"></i></a>
   </div>
 
-<!-- Form for handling the quizes -->
+  <!-- Landing Page Carousel -->
+  <div id="landing-page" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#landing-page" data-slide-to="0" class="active"></li>
+      <li data-target="#landing-page" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <h1>About Quiz Board</h1>
+        <p>
+          <h2>This quiz board project simulates a real paper work exam done in classes by students. The student/user is able to see multi-choice questions when the website loads. Each question has a number of points awarded when scored right. The
+            user
+            is
+            able to tick the correct answer through a radio button and submit answers when done taking the quiz. Once the answers are submitted, the student/user gets the results of what they scored and they are able to know their overall
+            performance
+            using a predefined criteria.</h2>
+          <!-- <img class="d-block w-100" src="img/quiz1.jpg" alt="First slide"> -->
+      </div>
+      <div class="carousel-item">
+        <h2>How to Take the Quiz</h2>
+        <p>
+          <h3>For each question select the answer by clicking the radio button. After answering the first three questions, click next to go to the next set. Once Done, click SUBMIT and view results</h3>
+        </p>
+        <!-- <img class="d-block w-100" src="img/quiz2.jpg" alt="Second slide"> -->
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#landing-page" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+  <!-- Form for handling the quizes -->
   <div class="container">
     <div class="radio-buttons">
-      <!-- QUESTION 1 -->
-      <p><strong>1. If Log<sub>x</sub> (1 / 8) = - 3 / 2, then x is equal to </strong></p>
-      <input type="radio" name="question-1" value="question-1">
-      <label for="question-1">A.-4</label><br>
-      <input type="radio" name="question-1" value="question-1">
-      <label for="question-1">B.4</label><br> <!--correct answer-->
-      <input type="radio" name="question-1" value="question-1">
-      <label for="question-1">C.1/4</label><br>
-      <input type="radio" name="question-1" value="question-1">
-      <label for="question-1">D.10</label><br>
+      <div id="set-1">
+        <!-- QUESTION 1 -->
+        <p><strong>1. If Log<sub>x</sub> (1 / 8) = - 3 / 2, then x is equal to </strong></p>
+        <input type="radio" name="question-1" value="question-1">
+        <label for="question-1">A.-4</label><br>
+        <input type="radio" name="question-1" value="question-1">
+        <label for="question-1">B.4</label><br>
+        <!--correct answer-->
+        <input type="radio" name="question-1" value="question-1">
+        <label for="question-1">C.1/4</label><br>
+        <input type="radio" name="question-1" value="question-1">
+        <label for="question-1">D.10</label><br>
 
-    <!-- QUESTION 2 -->
-    <p><strong>2. 20 % of 2 is equal to  </strong></p>
-    <input type="radio" name="question-2" value="question-2">
-    <label for="question-2">A.20</label><br>
-    <input type="radio" name="question-2" value="question-2">
-    <label for="question-2">B.4</label><br>
-    <input type="radio" name="question-2" value="question-2">
-    <label for="question-2">C.0.4</label><br> <!--correct answer-->
-    <input type="radio" name="question-2" value="question-2">
-    <label for="question-2">D.0.004</label><br>
-
-    <!-- QUESTION 3 -->
-
-    <p><strong>3. If Log<sub>4</sub>(x) = 12, then log <sub>2</sub>(x / 4) is equal to   </strong></p>
-    <input type="radio" name="question-2" value="question-2">
-    <label for="question-2">A. 11</label><br>
-    <input type="radio" name="question-2" value="question-2">
-    <label for="question-2">B. 48</label><br>
-    <input type="radio" name="question-2" value="question-2">
-    <label for="question-2">C. -12</label><br> <!--correct answer-->
-    <input type="radio" name="question-2" value="question-2">
-    <label for="question-2">D. 22</label><br>
-
-    <a class="btn btn-primary btn-lg btn-info" href="#part2" role="button">Next</a>
-
-    <!-- QUESTION 4 -->
-    <p><strong>4. The population of a country increased by an average of 2% per year from 2000 to 2003. If the population of this country was 2 000 000 on December 31, 2003, then the population of this country on January 1, 2000, to the nearest thousand would have been  </strong></p>
-    <input type="radio" name="question-1" value="question-1"> <!--correct answer-->
-    <label for="question-1">A.1 846 000 </label><br>
-    <input type="radio" name="question-1" value="question-1">
-    <label for="question-1">B. 1 852 000</label><br>
-    <input type="radio" name="question-1" value="question-1">
-    <label for="question-1">C.1 000 000 </label><br>
-    <input type="radio" name="question-1" value="question-1">
-    <label for="question-1">D.1 500 000</label><br>
-
-  <!-- QUESTION 5 -->
-  <p><strong>5. f is a quadratic function whose graph is a parabola opening upward and has a vertex on the x-axis. The graph of the new function g defined by g(x) = 2 - f(x - 5) has a range defined by the interval    </strong></p>
-  <input type="radio" name="question-2" value="question-2">
-  <label for="question-2">A.[ -5 , + infinity)</label><br>
-  <input type="radio" name="question-2" value="question-2">
-  <label for="question-2">B.[ 2 , + infinity)</label><br>
-  <input type="radio" name="question-2" value="question-2">
-  <label for="question-2">C.( - infinity , 2] </label><br> <!--correct answer-->
-  <input type="radio" name="question-2" value="question-2">
-  <label for="question-2">D.( - infinity , 0]</label><br>
-
-  <!-- QUESTION 6 -->
-
-  <p><strong>6. f is a function such that f(x) < 0. The graph of the new function g defined by g(x) = | f(x) | is a reflection of the graph of f  <sub>2</sub>(x / 4) is equal to   </strong></p>
-  <input type="radio" name="question-2" value="question-2">
-  <label for="question-2">A. on the y axis </label><br>
-  <input type="radio" name="question-2" value="question-2">
-  <label for="question-2">B. on the x axis </label><br> <!--correct answer-->
-  <input type="radio" name="question-2" value="question-2">
-  <label for="question-2">C. on the line y = x </label><br>
-  <input type="radio" name="question-2" value="question-2">
-  <label for="question-2">D. on the line y = - x</label><br>
-
-  <button class="submit btn-lg btn-info" type="button" name="button">View Results</button>
+        <!-- QUESTION 2 -->
+        <p><strong>2. 20 % of 2 is equal to </strong></p>
+        <input type="radio" name="question-2" value="question-2">
+        <label for="question-2">A.20</label><br>
+        <input type="radio" name="question-2" value="question-2">
+        <label for="question-2">B.4</label><br>
+        <input type="radio" name="question-2" value="question-2">
+        <label for="question-2">C.0.4</label><br>
+        <!--correct answer-->
+        <input type="radio" name="question-2" value="question-2">
+        <label for="question-2">D.0.004</label><br>
 
 
+      <!-- QUESTION 3 -->
 
+      <p><strong>3. If Log<sub>4</sub>(x) = 12, then log <sub>2</sub>(x / 4) is equal to </strong></p>
+      <input type="radio" name="question-2" value="question-2">
+      <label for="question-2">A. 11</label><br>
+      <input type="radio" name="question-2" value="question-2">
+      <label for="question-2">B. 48</label><br>
+      <input type="radio" name="question-2" value="question-2">
+      <label for="question-2">C. -12</label><br>
+      <!--correct answer-->
+      <input type="radio" name="question-2" value="question-2">
+      <label for="question-2">D. 22</label><br>
+      <a class="btn btn-primary btn-lg btn-info" id="questions-2" href="#part2" role="button">Next <i class="fas fa-forward"></i></a>
+    </div>
   </div>
   </div>
 
+
+  <div class="container radio-buttons">
+    <div id="set-2">
+
+      <!-- QUESTION 4 -->
+      <p><strong>4. The population of a country increased by an average of 2% per year from 2000 to 2003. If the population of this country was 2 000 000 on December 31, 2003, then the population of this country on January 1, 2000, to the nearest
+          thousand would have been </strong></p>
+      <input type="radio" name="question-1" value="question-1">
+      <!--correct answer-->
+      <label for="question-1">A.1 846 000 </label><br>
+      <input type="radio" name="question-1" value="question-1">
+      <label for="question-1">B. 1 852 000</label><br>
+      <input type="radio" name="question-1" value="question-1">
+      <label for="question-1">C.1 000 000 </label><br>
+      <input type="radio" name="question-1" value="question-1">
+      <label for="question-1">D.1 500 000</label><br>
+
+      <!-- QUESTION 5 -->
+      <p><strong>5. f is a quadratic function whose graph is a parabola opening upward and has a vertex on the x-axis. The graph of the new function g defined by g(x) = 2 - f(x - 5) has a range defined by the interval  </strong></p>
+      <input type="radio" name="question-2" value="question-2">
+      <label for="question-2">A.[ -5 , + infinity)</label><br>
+      <input type="radio" name="question-2" value="question-2">
+      <label for="question-2">B.[ 2 , + infinity)</label><br>
+      <input type="radio" name="question-2" value="question-2">
+      <label for="question-2">C.( - infinity , 2] </label><br>
+      <!--correct answer-->
+      <input type="radio" name="question-2" value="question-2">
+      <label for="question-2">D.( - infinity , 0]</label><br>
+
+      <!-- QUESTION 6 -->
+
+      <p><strong>6. f is a function such that f(x) < 0. The graph of the new function g defined by g(x)=| f(x) | is a reflection of the graph of f  <sub>2</sub>(x / 4) is equal to </strong></p>
+      <input type="radio" name="question-2" value="question-2">
+      <label for="question-2">A. on the y axis </label><br>
+      <input type="radio" name="question-2" value="question-2">
+      <label for="question-2">B. on the x axis </label><br>
+      <!--correct answer-->
+      <input type="radio" name="question-2" value="question-2">
+      <label for="question-2">C. on the line y = x </label><br>
+      <input type="radio" name="question-2" value="question-2">
+      <label for="question-2">D. on the line y = - x</label><br>
+
+      <button class="submit btn-lg btn-info" type="button" name="button">View Results</button>
+    </div>
+  </div>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

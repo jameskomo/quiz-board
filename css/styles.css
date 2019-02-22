@@ -4,7 +4,21 @@
 body {
   background-color: #a6e3e9;
 }
-
+h1 {
+  font-family: 'Crafty Girls', cursive;
+}
+h2 {
+  font-family: 'Abel', sans-serif;
+  font-size: 20px;
+}
+.radio-buttons {
+  font-family: 'Abel', sans-serif;;
+  font-size: 20px;
+}
+img {
+  height: 500px;
+  width: 30%;
+}
 
 
 
@@ -25,6 +39,15 @@ body {
 #about {
   text-align: center;
 }
+#landing-page {
+  background-color: #4f9da6;
+}
 .btn {
   margin-left: 80%;
+}
+#set-2 {
+  display: none;
+}
+.submit {
+  text-align: center;
 }
