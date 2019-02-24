@@ -40,10 +40,13 @@ img {
   text-align: center;
 }
 #landing-page {
-  background-color: #4f9da6;
+  display: none;
 }
 .btn {
   margin-left: 80%;
+}
+#set-1 {
+  display: none;
 }
 #set-2 {
   display: none;
