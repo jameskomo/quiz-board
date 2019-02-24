@@ -1,12 +1,15 @@
-//Get all radio button values on clicking view Results
+//Get radio button values from HTML
 $("#results").on("click", function() {
-  var marks = [];
-  $(".radio-btn:checked").each(function() {
-    alert("Radio: " + $(this).val());
-    marks.push($(this).val());
-    console.log(marks);
+  var totalMarks = 0;
+  $("input[type=radio]:checked").each(function() {
+    totalMarks += parseInt($(this).val());
   });
+  $('#results').val(totalMarks);
+  console.log(totalMarks);
 });
+
+
+//Page button events
 
 $("#learn-more").on("click", function() {
   event.preventDefault();
