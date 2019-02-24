@@ -1,6 +1,6 @@
 //Form validation to ensure all answers are given
 if ($('input[type=radio]:checked').length <= 0) {
-    alert("You MUST answer all questions");
+  alert("You MUST answer all questions");
 }
 
 //Get radio button values from HTML
@@ -13,6 +13,13 @@ $("#results").on("click", function() {
   console.log(totalMarks);
 });
 
+//Navigation Bar Manipulation
+function closeTab() {
+  var conf = confirm("Are you sure, you want to close this tab?");
+  if (conf == true) {
+    close();
+  }
+}
 
 //Page button events
 
