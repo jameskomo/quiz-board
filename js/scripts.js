@@ -1,3 +1,8 @@
+//Form validation to ensure all answers are given
+if ($('input[type=radio]:checked').length <= 0) {
+    alert("You MUST answer all questions");
+}
+
 //Get radio button values from HTML
 $("#results").on("click", function() {
   var totalMarks = 0;
