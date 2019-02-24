@@ -4,22 +4,9 @@ $("#results").on("click", function() {
   $(".radio-btn:checked").each(function() {
     alert("Radio: " + $(this).val());
     marks.push($(this).val());
-    //Sum all array items
-    var newMarks=parseInt(marks, 10);
-    var totalMarks = 0;
-    for(var i = 0; i < newMarks.length; i++){
-    totalMarks += newMarks[i];
-    }
-    console.log(newMarks);
-    console.log('Your total is ' + totalMarks);
+    console.log(marks);
   });
 });
-
-
-
-
-
-
 
 $("#learn-more").on("click", function() {
   event.preventDefault();
