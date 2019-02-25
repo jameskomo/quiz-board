@@ -22,7 +22,7 @@ img {
   height: 200px;
   width: 70%;
   margin-top: 20px;
-  border-radius: 10%;
+  border-radius: 8%;
 }
 
 /* CLASSES AND IDs STYLING */
@@ -66,10 +66,4 @@ img {
 
 .submit {
   margin-left: 50%;
-}
-
-.studentMarks {
-  display: none;
-  color: red;
-  border-radius: 30%;
 }
