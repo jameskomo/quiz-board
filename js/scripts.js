@@ -1,4 +1,4 @@
-// USER INTERFACE LOGIC
+// BUSINESS LOGIC
 
 //Get radio button values from HTML
 $("#results").on("click", function() {
@@ -23,7 +23,7 @@ $("#results").on("click", function() {
 });
 
 
-// BUSINESS LOGIC
+// USER INTERFACE LOGIC
 //Navigation Bar Manipulation
 $("#nav-home").on("click", function() {
   event.preventDefault();
