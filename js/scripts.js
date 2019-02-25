@@ -1,12 +1,8 @@
-//Form validation to ensure all answers are given
-if ($('input[type=radio]:checked').length <= 0) {
-  alert("You MUST answer all questions");
-}
+// USER INTERFACE LOGIC
 
 //Get radio button values from HTML
 $("#results").on("click", function() {
-  $(".studentMarks").show()
-  $("#set-2").hide()
+  $("#set-2").hide();
   var totalMarks = 0;
   $("input[type=radio]:checked").each(function() {
     totalMarks += parseInt($(this).val());
@@ -15,7 +11,7 @@ $("#results").on("click", function() {
   console.log(totalMarks);
   var finalMarks = (totalMarks / 75) * 100;
   var roundedMarks = finalMarks.toFixed(0);
-  $(".final-score .output").html(roundedMarks);
+  //Conditional Loop for finalMarks
   if (roundedMarks > 80) {
     alert("Your score is " + roundedMarks + " %.Your overall grade is EXCELLENT ");
   } else if (roundedMarks <= 80 && roundedMarks >= 50) {
@@ -23,8 +19,11 @@ $("#results").on("click", function() {
   } else if (roundedMarks < 50) {
     alert("Your score is " + roundedMarks + " %.You need to RETAKE this exam ");
   };
+  $("#about").show();
 });
-//Conditional Loop for finalMarks
+
+
+// BUSINESS LOGIC
 
 
 //Navigation Bar Manipulation
@@ -38,6 +37,7 @@ $("#nav-home").on("click", function() {
 
 $("#nav-test").on("click", function() {
   event.preventDefault();
+  $("#landing-page").hide();
   $("#about").hide();
   $("#set-2").hide();
   $("#set-1").show();

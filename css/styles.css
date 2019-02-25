@@ -1,6 +1,6 @@
 /* ELEMENT TAGS STYLING */
 body {
-  background-color: #a6e3e9;
+  background-color: #8fbbaf;
 }
 
 h1 {
@@ -19,8 +19,10 @@ h2 {
 }
 
 img {
-  height: 500px;
-  width: 30%;
+  height: 200px;
+  width: 70%;
+  margin-top: 20px;
+  border-radius: 10%;
 }
 
 /* CLASSES AND IDs STYLING */
@@ -39,6 +41,7 @@ img {
 
 #about {
   text-align: center;
+  line-height: 3;
 }
 
 #landing-page {
@@ -47,6 +50,10 @@ img {
 
 .btn {
   margin-left: 80%;
+}
+
+#learn-more {
+  margin-left: 50%;
 }
 
 #set-1 {
@@ -64,5 +71,5 @@ img {
 .studentMarks {
   display: none;
   color: red;
-  border-radius: 70%;
+  border-radius: 60%;
 }

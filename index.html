@@ -16,7 +16,7 @@
   <!-- Insert Navigation Bar at Page Top -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <nav class="navbar navbar-dark bg-dark">
-      <span class="navbar-brand">Quiz Board</span>
+      <span class="navbar-brand">K.O.M.O Quiz</span>
     </nav>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -36,17 +36,23 @@
     </div>
   </nav>
 
-  <!-- About Project Section -->
   <div class="container" id="about">
-    <h1>About Quiz Board</h1>
-    <p>
-      <h2>This quiz board project simulates a real paper work exam done in classes by students. The student/user is able to see multi-choice questions when the website loads. Each question has a number of points awarded when scored right. The user
-        is able to tick the correct answer through a radio button and submit answers when done taking the quiz. Once the answers are submitted, the student/user gets the results of what they scored and they are able to know their overall performance
-        using a predefined criteria.</h2>
-    </p>
-    <a class="btn btn-primary btn-lg btn-info" id="learn-more" href="" role="button">Learn more <i class="fas fa-info-circle"></i></a>
+    <div class="row">
+      <div class="col-lg-6">
+        <h2><strong>How the Quiz Works</strong></h2>
+        <p>
+          <h2>This quiz board project simulates a real paper work exam done in classes by students. The student/user is able to see multi-choice questions when the website loads. Each question has a number of points awarded when scored right. The
+            user is able to tick the correct answer through a radio button and submit answers when done taking the quiz. Once the answers are submitted, the student/user gets the results of what they scored and they are able to know their overall
+            performance using a predefined criteria.</h2>
+        </p>
+      </div>
+      <div class="col-lg-6">
+        <img src="img/quiz1.jpg" alt="Quiz Image">
+      </div>
+      <a class="btn btn-primary btn-lg btn-info" id="learn-more" href="" role="button">Learn more <i class="fas fa-info-circle"></i></a>
+    </div>
   </div>
-
+  </div>
 
   <!-- Landing Page -->
   <div class="container" id="landing-page">
@@ -66,14 +72,14 @@
       <div id="set-1">
         <!-- QUESTION 1 -->
         <p><strong>1. If Log<sub>x</sub> (1 / 8) = - 3 / 2, then x is equal to </strong></p>
-        <input type="radio" name="question-1" value="0" class="radio-btn">
+        <input type="radio" name="question-1" value="0" class="radio-btn" required>
         <label for="question">A.-4</label><br>
-        <input type="radio" name="question-1" value="10" class="radio-btn">
+        <input type="radio" name="question-1" value="10" class="radio-btn" required>
         <label for="question">B.4</label><br>
         <!--correct answer 1B-->
-        <input type="radio" name="question-1" value="0" class="radio-btn">
+        <input type="radio" name="question-1" value="0" class="radio-btn" required>
         <label for="question">C.1/4</label><br>
-        <input type="radio" name="question-1" value="0" class="radio-btn">
+        <input type="radio" name="question-1" value="0" class="radio-btn" required>
         <label for="question">D.10</label><br>
 
         <!-- QUESTION 2 -->
@@ -159,11 +165,18 @@
     </div>
     </form>
   </div>
-  <div class="studentMarks">
-    <h2 class="final-score" style="text-align: center;">Your overall score is: <span class="output"></span></h2>
-  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/scripts.js" charset="utf-8"></script>
+
+  <!-- Footer -->
+  <footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">James Komo© 2019
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
 </body>
 
 </html>
