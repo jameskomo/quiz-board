@@ -5,14 +5,17 @@ if ($('input[type=radio]:checked').length <= 0) {
 
 //Get radio button values from HTML
 $("#results").on("click", function() {
+  $("#set-2").hide()
   var totalMarks = 0;
   $("input[type=radio]:checked").each(function() {
     totalMarks += parseInt($(this).val());
   });
   $('#results').val(totalMarks);
   console.log(totalMarks);
-  var finalMarks=(totalMarks/75)*100;
-  alert ("Your total score is "+finalMarks+" %")
+  var finalMarks = (totalMarks / 75) * 100;
+  var roundedMarks=finalMarks.toFixed(0);
+  alert("Your total score is " + roundedMarks + " %");
+  $("#about").show();
 });
 
 //Navigation Bar Manipulation
@@ -36,7 +39,7 @@ $("#nav-about").on("click", function() {
   $("#set-2").hide();
   $("#set-1").hide();
   $("#landing-page").show();
-  });
+});
 
 //Page button events
 
