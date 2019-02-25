@@ -24,7 +24,8 @@ $("#nav-home").on("click", function() {
 
 $("#nav-test").on("click", function() {
   event.preventDefault();
-  $("#about").hide()
+  $("#about").hide();
+  $("#set-2").hide();
   $("#set-1").show();
 });
 $("#nav-about").on("click", function() {
@@ -38,8 +39,8 @@ $("#nav-about").on("click", function() {
 
 $("#learn-more").on("click", function() {
   event.preventDefault();
-  $("#about").hide()
-  $("#landing-page").show();
+  $("#about").hide();
+  $("#landing-page").fadeIn(3000);
 });
 
 $("#take-test").on("click", function() {
