@@ -11,6 +11,8 @@ $("#results").on("click", function() {
   });
   $('#results').val(totalMarks);
   console.log(totalMarks);
+  var finalMarks=(totalMarks/75)*100;
+  alert ("Your total score is "+finalMarks+" %")
 });
 
 //Navigation Bar Manipulation
@@ -31,8 +33,10 @@ $("#nav-test").on("click", function() {
 $("#nav-about").on("click", function() {
   event.preventDefault();
   $("#about").hide();
+  $("#set-2").hide();
+  $("#set-1").hide();
   $("#landing-page").show();
-});
+  });
 
 //Page button events
 
