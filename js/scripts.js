@@ -14,14 +14,27 @@ $("#results").on("click", function() {
 });
 
 //Navigation Bar Manipulation
-function closeTab() {
-  var conf = confirm("Are you sure, you want to close this tab?");
-  if (conf == true) {
-    close();
-  }
-}
+$("#nav-home").on("click", function() {
+  event.preventDefault();
+  $("#about").show()
+  $("#set-1").hide()
+  $("#set-2").hide()
+  $("#landing-page").hide();
+});
+
+$("#nav-test").on("click", function() {
+  event.preventDefault();
+  $("#about").hide()
+  $("#set-1").show();
+});
+$("#nav-about").on("click", function() {
+  event.preventDefault();
+  $("#about").hide();
+  $("#landing-page").show();
+});
 
 //Page button events
+
 
 $("#learn-more").on("click", function() {
   event.preventDefault();
@@ -40,8 +53,3 @@ $("#questions-2").on("click", function() {
   $("#set-1").hide();
   $("#set-2").show();
 });
-
-//
-// $("#results").on("click",function closeWin() {
-//   myWindow.close();   // Closes the new window
-// }
