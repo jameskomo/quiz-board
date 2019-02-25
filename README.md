@@ -1,14 +1,12 @@
 # **Project Name: TRIANGLE TRACKER**
 
 ## **Project description**
-This application will help users know whether a triangle is isosceles, equilateral, scalene or NOT a triangle at all.
+This quiz board project simulates a real paper work exam done in classes by students. 
+The student/user is able to see several questions when the website loads.
+Each question has a number of points awarded when scored right. 
+The user is able to tick the correct answer through a radio button and submit answers when done taking the quiz. Once the answers are submitted, the student/user gets the results of what they scored and they are able to know their overall performance using a predefined criteria. 
 
-Based on the functionality of the application, the following will be expected:
-
--For an equilateral triangle, all sides must be equal.
--For an isosceles triangle, two sides are exactly equal.
--For a scalene triangle, none of the sides is equal. However, the sum of any two sides of the triangle must be greater than the third side.
--Most importantly, if the sum of any two sides of the triangle is equal to or less than the third remaining side, then a triangle CANNOT be formed using those values. (For example, the values 9,4 & 3 cannot form a triangle.)
+As with normal exams, students are allowed to leave blank answers.
 
 
 ## **Author information**
@@ -25,17 +23,36 @@ Open from a friendly `browser
 
 ## **Behavior Driven Development (BDD)**
 
-Triangle Tracker takes the lengths of three sides and determines if they form a valid triangle. If so, the tracker returns the name of the kind of triangle the sides make (Equilateral, Isosceles, Scalene).
-The application enables the user to enter values of a triangle then alerts what type of triangle it is.
-After the user keys in the values and presses Check!, an alert dialogue box pops up and tells the user what triangle matches the entered values. When you click the "Reset" button in the alert dialogue box you can reset your app so that you may re-enter your values again and so on.
+| ITEM           |INPUT                          |OUTPUT                     	       |
+|----------------|-------------------------------|---------------------------------    |
+|Main Page	 |  Page load	                 |'Navigation bar and about section    |
+|						 |displays			       |
+|----------------|-------------------------------|---------------------------------    |
+|About Menu      |User clicks about tab          |Landing Page displays                |
+|----------------|-------------------------------|---------------------------------    |
 
-The user enter length of side1, side2 and side3
-If the sum of two sides is equal or exceeds the value of the third side, then the program will detect that the values do not form a definite triangle
-If the values entered are all equal to one another, then the program would show that an Equilateral triangle.
-If two values in the input are equal, third different, the program would show an iscoceles triangle
-If the values entered differ but don't exceed each other by much, triangle would be a Scalene triangle.
+|Test Menu       |User clicks test tab on nav bar|First set of questions displays      |
+|----------------|-------------------------------|---------------------------------    |
 
-The application does not allow special characters or strings in the input fields as a triangle should only have number values.
+|Home Menu       |User clicks Home tab on nav bar|The page defaults to main pages      |
+|----------------|-------------------------------|---------------------------------    |
+   
+|Learn More      |User clicks Learn more button  |about page displays with test info   |
+|----------------|-------------------------------|---------------------------------    |
+   
+|Take Test       |User clicks take Test button   |First set of questions displays      |
+|----------------|-------------------------------|---------------------------------    |
+
+|Questions set-1 |User select answers through 	 |The radio button values are 	       |
+		  radio buttons and clicks next  |captured through backend 	       |
+|----------------|-------------------------------|---------------------------------    | 
+|Questions set-2 |User select answers through 	 |The radio button values are 	       |
+		 |radio buttons and clicks 	 |captured through backend	       |
+|----------------|-------------------------------|---------------------------------    |
+|View Results	 |Student Clicks View Results 	 |Total marks displays as a percentage.|
+		 |				 | If total>80%, EXCELLENT             |
+		 |				 |If total<=80% && total >=50%, FAIR   | 
+		 |				 |If total<50%, RETAKE	 	       |
 
 
 
@@ -44,7 +61,7 @@ The application does not allow special characters or strings in the input fields
 
 IDEs: Atom and Sublime Editor
 Browsers include either: Google Chrome, Mozilla Firefox.
-JavaScript,HTML and CSS
+JavaScript,jQuery, Bootstrap & CSS
 
 
 ## **Known Bugs**
