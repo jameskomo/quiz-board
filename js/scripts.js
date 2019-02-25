@@ -5,6 +5,7 @@ if ($('input[type=radio]:checked').length <= 0) {
 
 //Get radio button values from HTML
 $("#results").on("click", function() {
+  $(".studentMarks").show()
   $("#set-2").hide()
   var totalMarks = 0;
   $("input[type=radio]:checked").each(function() {
@@ -14,15 +15,13 @@ $("#results").on("click", function() {
   console.log(totalMarks);
   var finalMarks = (totalMarks / 75) * 100;
   var roundedMarks = finalMarks.toFixed(0);
+  $(".final-score .output").html(roundedMarks);
   if (roundedMarks > 80) {
     alert("Your score is " + roundedMarks + " %.Your overall grade is EXCELLENT ");
-    $("#about").show();
   } else if (roundedMarks <= 80 && roundedMarks >= 50) {
     alert("Your score is " + roundedMarks + " %.Your overall grade is FAIR ");
-    $("#about").show();
   } else if (roundedMarks < 50) {
-    alert("Your score is " + roundedMarks + " %.Your need to RETAKE this exam ");
-    $("#about").show();
+    alert("Your score is " + roundedMarks + " %.You need to RETAKE this exam ");
   };
 });
 //Conditional Loop for finalMarks
@@ -52,12 +51,10 @@ $("#nav-about").on("click", function() {
 });
 
 //Page button events
-
-
 $("#learn-more").on("click", function() {
   event.preventDefault();
   $("#about").hide();
-  $("#landing-page").fadeIn(3000);
+  $("#landing-page").fadeIn(2000);
 });
 
 $("#take-test").on("click", function() {
