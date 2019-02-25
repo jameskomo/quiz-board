@@ -13,10 +13,20 @@ $("#results").on("click", function() {
   $('#results').val(totalMarks);
   console.log(totalMarks);
   var finalMarks = (totalMarks / 75) * 100;
-  var roundedMarks=finalMarks.toFixed(0);
-  alert("Your total score is " + roundedMarks + " %");
-  $("#about").show();
+  var roundedMarks = finalMarks.toFixed(0);
+  if (roundedMarks > 80) {
+    alert("Your score is " + roundedMarks + " %.Your overall grade is EXCELLENT ");
+    $("#about").show();
+  } else if (roundedMarks <= 80 && roundedMarks >= 50) {
+    alert("Your score is " + roundedMarks + " %.Your overall grade is FAIR ");
+    $("#about").show();
+  } else if (roundedMarks < 50) {
+    alert("Your score is " + roundedMarks + " %.Your need to RETAKE this exam ");
+    $("#about").show();
+  };
 });
+//Conditional Loop for finalMarks
+
 
 //Navigation Bar Manipulation
 $("#nav-home").on("click", function() {
