@@ -24,8 +24,6 @@ $("#results").on("click", function() {
 
 
 // BUSINESS LOGIC
-
-
 //Navigation Bar Manipulation
 $("#nav-home").on("click", function() {
   event.preventDefault();
