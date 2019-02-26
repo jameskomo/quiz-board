@@ -16,44 +16,24 @@ James Komo
 
 ## **Setup instructions**
 
-Run on this Link: https://jameskomo.github.io/triangle-tracker/
+Run on this Link: https:https://jameskomo.github.io/quiz-board/.
 You need a smartphone, laptop, desktop or any gadget sreen accessible to internet
 Open from a friendly `browser
 
 
 ## **Behavior Driven Development (BDD)**
 
-| ITEM           |INPUT                          |OUTPUT                     	       |
-|----------------|-------------------------------|---------------------------------    |
-|Main Page	 |  Page load	                 |'Navigation bar and about section    |
-|						 |displays			       |
-|----------------|-------------------------------|---------------------------------    |
-|About Menu      |User clicks about tab          |Landing Page displays                |
-|----------------|-------------------------------|---------------------------------    |
-
-|Test Menu       |User clicks test tab on nav bar|First set of questions displays      |
-|----------------|-------------------------------|---------------------------------    |
-
-|Home Menu       |User clicks Home tab on nav bar|The page defaults to main pages      |
-|----------------|-------------------------------|---------------------------------    |
-   
-|Learn More      |User clicks Learn more button  |about page displays with test info   |
-|----------------|-------------------------------|---------------------------------    |
-   
-|Take Test       |User clicks take Test button   |First set of questions displays      |
-|----------------|-------------------------------|---------------------------------    |
-
-|Questions set-1 |User select answers through 	 |The radio button values are 	       |
-		  radio buttons and clicks next  |captured through backend 	       |
-|----------------|-------------------------------|---------------------------------    | 
-|Questions set-2 |User select answers through 	 |The radio button values are 	       |
-		 |radio buttons and clicks 	 |captured through backend	       |
-|----------------|-------------------------------|---------------------------------    |
-|View Results	 |Student Clicks View Results 	 |Total marks displays as a percentage.|
-		 |				 | If total>80%, EXCELLENT             |
-		 |				 |If total<=80% && total >=50%, FAIR   | 
-		 |				 |If total<50%, RETAKE	 	       |
-
+| ITEM            	| INPUT                                                              	| OUTPUT                                                                                                                                                  	|
+|-----------------	|--------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| Main Page       	| User Loads Page                                                    	| Navigation bar and about section displays                                                                                                               	|
+| Test Menu       	| User clicks about menu                                             	| Landing Page displays                                                                                                                                   	|
+| Home Menu       	| User clicks home menu                                              	| The page defaults to main landing page                                                                                                                  	|
+| Test Menu       	| User clicks test menu                                              	| question set 1 displays and student can start taking the exam                                                                                           	|
+| Learn More      	| User clicks Learn more button                                      	| about page displays with test info                                                                                                                      	|
+| Take Test       	| User clicks take Test button                                       	| First set of questions displays                                                                                                                         	|
+| Questions set-1 	| User selects answers through radio buttons on set-1 questions      	| The selected radio button values/marks are captured through the backend                                                                                 	|
+| Questions set-2 	| User selects answers through radio buttons on set-2 questions      	| The selected radio button values/marks are captured through the backend                                                                                 	|
+| View Results    	| Student Clicks View Results after completing both set of questions 	| Total marks displays as a percentage as a prompt.				  If total>80%, EXCELLENT        			   If total<=80% && total >=50%, FAIR    						 If total<50%, RETAKE        	|
 
 
 
