@@ -1,4 +1,4 @@
-// BUSINESS LOGIC
+// BUSINESS LOGIC/BACK-END
 
 //Get radio button values from HTML
 $("#results").on("click", function() {
