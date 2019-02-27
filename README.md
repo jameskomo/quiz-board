@@ -1,4 +1,4 @@
-# **Project Name: TRIANGLE TRACKER**
+# **Project Name: QUIZ BOARD**
 
 ## **Project description**
 This quiz board project simulates a real paper work exam done in classes by students. 
